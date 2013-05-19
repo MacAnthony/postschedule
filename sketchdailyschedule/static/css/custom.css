@@ -1,0 +1,47 @@
+.clear{
+	clear:both;
+}
+.events li{
+	clear:both;
+	margin-bottom:20px;
+}
+.date{
+	background-color:#317EAC;
+	color:white;
+	font-size:1.2em;
+	padding:10px;
+	float:left;
+	width:75px;
+	margin:3px;
+	border-radius: 4px 4px 4px 4px;
+}
+.date-details{
+	padding:5px;
+}
+
+.month td{
+    width:100px;
+    height:100px;
+    padding:10px;
+    border:solid 1px lightblue;
+    vertical-align:top;
+}
+
+.month {
+
+}
+.month ul{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+.month td.today{
+    border:dashed 3px black;
+}
+.month td.past{
+    background-color:dimgrey;
+}
+.next{
+    margin-left: 719px;
+}
