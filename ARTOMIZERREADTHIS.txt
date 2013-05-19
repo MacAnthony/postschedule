@@ -1,0 +1,4 @@
+I was thinking I'd use django social auth to make the MODS login with their reddit accounts to access this.
+http://django-social-auth.readthedocs.org/en/latest/backends/reddit.html
+
+Also, this library https://praw.readthedocs.org/en/latest/#a-few-short-examples should make it very easy to setup the script to post the daily. I figure I'll have a cron job do it.
