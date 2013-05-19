@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, UpdateView
 from schedule.models import Post
 from schedule.htmlcalendar import PostCalendar
 #calendar shit
@@ -11,7 +11,7 @@ from django.utils.safestring import mark_safe
 # Create your views here.
 
 class CreatePost(CreateView):
-    template_name = "forms/form_edit.html"
+    template_name = "forms/form_create.html"
     context_object_name = "post"
     model = Post
     success_url = "/cal/"
@@ -27,6 +27,14 @@ class CreatePost(CreateView):
         context['date_for_link'] = date(self.year,self.month,self.day)
         return context
 
+class EditPost(UpdateView):
+    template_name = "forms/form_edit.html"
+    context_object_name = "post"
+    model = Post
+    success_url = "/cal/"
+    def get_object(self, queryset=None):
+        obj = Post.objects.get(id=self.kwargs['id'])
+        return obj
 
 # Calendar View
 def calendar(request, year=date.today().strftime("%Y"), month=date.today().strftime("%m")):

@@ -35,6 +35,7 @@ class PostCalendar(HTMLCalendar):
                 for post in self.posts[day]:
                     body.append('<li>')
                     body.append(esc(post.title))
+                    body.append('<br/><a class="btn btn-info btn-small" href="/update/%s/">Edit</a>' % (post.id))
                     body.append('</li>')
                 body.append('</ul>')
                 return self.day_cell(cssclass, '%d %s' % (day, ''.join(body)))

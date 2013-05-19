@@ -7,7 +7,7 @@ class Post(models.Model):
     user = models.CharField(max_length=30)
     title = models.CharField(max_length=30)
     text = models.TextField()
-    date = models.DateField(default=datetime.now, blank=True)
+    date = models.DateField(default=datetime.now, blank=True, unique=True)
 
     def ___unicode___(self):
         return self.title

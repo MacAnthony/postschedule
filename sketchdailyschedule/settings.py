@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'schedule',
     'south',
     'social_auth',
+    'praw',
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -161,6 +162,9 @@ AUTHENTICATION_BACKENDS = (
 REDDIT_APP_ID = 'VcLJVSHxSP91dQ'
 REDDIT_API_SECRET = 'UwLglu9GRDW8dR9kuu7uBmRbkQo'
 REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
+
+#passwords
+from secret import *
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
