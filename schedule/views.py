@@ -4,9 +4,12 @@ from schedule.htmlcalendar import PostCalendar
 #calendar shit
 from datetime import date
 from dateutil.relativedelta import relativedelta
+from django.utils.dateformat import DateFormat
 
 from django.shortcuts import render_to_response
 from django.utils.safestring import mark_safe
+
+import logging
 
 # Create your views here.
 
@@ -20,7 +23,9 @@ class CreatePost(CreateView):
         self.year = int(self.kwargs["year"])
         self.month = int(self.kwargs["month"])
         self.day = int(self.kwargs["day"])
-        return { 'date': date(self.year, self.month, self.day) }
+        dt = date(self.year, self.month, self.day)
+        df = DateFormat(dt)
+        return {'date': date(self.year, self.month, self.day), 'title': ("%s -" % df.format('F jS')) }
 
     def get_context_data(self, **kwargs):
         context = super(CreatePost, self).get_context_data(**kwargs)
@@ -37,10 +42,11 @@ class EditPost(UpdateView):
         return obj
 
 # Calendar View
-def calendar(request, year=date.today().strftime("%Y"), month=date.today().strftime("%m")):
+def calendar_view(request, year, month):
   post_schedule = Post.objects.order_by('date').filter(
     date__year=int(year), date__month=int(month)
   )
+
   prev = date(int(year), int(month), 1) - relativedelta(months=1)
   next = date(int(year), int(month), 1) + relativedelta(months=1)
 
