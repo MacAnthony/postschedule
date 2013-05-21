@@ -1,4 +1,5 @@
 from django.views.generic import CreateView, UpdateView
+from django.contrib.auth.decorators import login_required
 from schedule.models import Post
 from schedule.htmlcalendar import PostCalendar
 #calendar shit
@@ -8,6 +9,8 @@ from django.utils.dateformat import DateFormat
 
 from django.shortcuts import render_to_response
 from django.utils.safestring import mark_safe
+import praw
+
 
 import logging
 
@@ -42,13 +45,23 @@ class EditPost(UpdateView):
         return obj
 
 # Calendar View
-def calendar_view(request, year, month):
-  post_schedule = Post.objects.order_by('date').filter(
+def calendar_view(request, year=date.today().strftime("%Y"), month=date.today().strftime("%m")):
+    post_schedule = Post.objects.order_by('date').filter(
     date__year=int(year), date__month=int(month)
-  )
+    )
 
-  prev = date(int(year), int(month), 1) - relativedelta(months=1)
-  next = date(int(year), int(month), 1) + relativedelta(months=1)
+    prev = date(int(year), int(month), 1) - relativedelta(months=1)
+    next = date(int(year), int(month), 1) + relativedelta(months=1)
 
-  cal = PostCalendar(post_schedule).formatmonth(int(year), int(month))
-  return render_to_response('calendar/calendar.html', {'calendar': mark_safe(cal),'prev': prev, 'next': next})
+    cal = PostCalendar(post_schedule).formatmonth(int(year), int(month))
+
+
+    #reddit auth stuff
+    if request.GET.get('code', ''):
+        r = praw.Reddit('OAuth Sketchdaily Scheduler u/davidwinters ver 0.1.')
+        info = r.get_access_information(request.GET.get('code', ''))
+        reddit_user = r.get_me()
+    else:
+        reddit_user = "lol fail"
+
+    return render_to_response('calendar/calendar.html', {'calendar': mark_safe(cal),'prev': prev, 'next': next, 'user': reddit_user})
