@@ -2,9 +2,25 @@
 
 {% block content %}
               <h2>Schedule a Theme</h2>
+    <div class="row">
+    <span class="span4">
              <form action="/create{{ date_for_link|date:"/o/m/d" }}" method="post">{% csrf_token %}
             {{ form.as_p }}
             <input type="submit" value="Submit" />
             </form>
+    </span>
+     <span class="span4">
 
+            <pre>
+*italics*
+**bold**
+super^script
+~~strikethrough~~
+[reddit!](http://reddit.com)
+(tab or 4 spaces)preformatted text
+blah blah `inline code text` blah blah
+\*escape the formatting syntax\*
+            </pre>
+	  </span>
+   </div>
 {% endblock %}
