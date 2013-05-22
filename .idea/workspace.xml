@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed72db33-7244-43a2-a64e-77b5dea79c12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/img/glyphicons-halflings.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap-responsive.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/sketchdailyschedule/static/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.sql" afterPath="$PROJECT_DIR$/data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/forms/form_edit.html" afterPath="$PROJECT_DIR$/templates/forms/form_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule/htmlcalendar.py" afterPath="$PROJECT_DIR$/schedule/htmlcalendar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule/models.py" afterPath="$PROJECT_DIR$/schedule/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/postschedule.iml" afterPath="$PROJECT_DIR$/.idea/postschedule.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/settings.py" afterPath="$PROJECT_DIR$/sketchdailyschedule/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sketchdailyschedule/urls.py" afterPath="$PROJECT_DIR$/sketchdailyschedule/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule/views.py" afterPath="$PROJECT_DIR$/schedule/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="postschedule.iws" />
@@ -33,12 +22,13 @@
     <file path="/admin.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1368939575373" ignored="false" />
     <file path="/custom.css" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1368945716293" ignored="false" />
     <file path="/calendar.html" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369001549684" ignored="false" />
-    <file path="/htmlcalendar.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369001657671" ignored="false" />
+    <file path="/htmlcalendar.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369257185070" ignored="false" />
     <file path="/ARTOMIZERREADTHIS.txt" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1368951853903" ignored="false" />
     <file path="/posttheme.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369005379903" ignored="false" />
     <file path="/secret.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369003393613" ignored="false" />
-    <file path="/Dummy.txt" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369003818044" ignored="false" />
+    <file path="/Dummy.txt" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369235552760" ignored="false" />
     <file path="/.gitignore" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369003885203" ignored="false" />
+    <file path="/manage.py" changelist="ed72db33-7244-43a2-a64e-77b5dea79c12" time="1369097560355" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +51,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sketchdailyschedule/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="27" selection-start="4574" selection-end="4574" vertical-scroll-proportion="0.0">
+            <state line="18" column="17" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,9 +61,7 @@
         <entry file="file://$PROJECT_DIR$/schedule/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="36" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,32 +69,26 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedule/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
+            <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posttheme.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/schedule/management/commands/posttheme.py">
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="8" selection-start="332" selection-end="332" vertical-scroll-proportion="0.32185885">
-              <folding>
-                <element signature="e#0#65#0" expanded="true" />
-              </folding>
+            <state line="10" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlcalendar.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="htmlcalendar.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schedule/htmlcalendar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="48" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+            <state line="30" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.33457944">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,10 +102,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="form_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/forms/form_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="33" selection-start="1179" selection-end="1179" vertical-scroll-proportion="6.1153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sketchdailyschedule/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="16" column="23" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,9 +133,7 @@
         <entry file="file://$PROJECT_DIR$/schedule/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,30 +156,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sketchdailyschedule/static/css/custom.css" />
         <option value="$PROJECT_DIR$/schedule/migrations/htmlcalendar.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/ARTOMIZERREADTHIS.txt" />
         <option value="$PROJECT_DIR$/sketchdailyschedule/urls.py" />
         <option value="$PROJECT_DIR$/schedule/models.py" />
         <option value="$PROJECT_DIR$/templates/calendar/calendar.html" />
-        <option value="$PROJECT_DIR$/schedule/htmlcalendar.py" />
         <option value="$PROJECT_DIR$/templates/forms/form_create.html" />
         <option value="$PROJECT_DIR$/templates/forms/form_edit.html" />
         <option value="$PROJECT_DIR$/schedule/views.py" />
         <option value="$PROJECT_DIR$/schedule/management/commands/__init__.py" />
         <option value="$PROJECT_DIR$/sketchdailyschedule/secret.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sketchdailyschedule/settings.py" />
         <option value="$PROJECT_DIR$/schedule/management/commands/posttheme.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/sketchdailyschedule/settings.py" />
+        <option value="$PROJECT_DIR$/schedule/htmlcalendar.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1678" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -255,6 +253,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,6 +269,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="postschedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,17 +352,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.django.DjangoModulesConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sketchdailyschedule/settings.py" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -347,29 +397,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="postschedule" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -391,6 +418,29 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="postschedule" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -415,7 +465,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -425,8 +475,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="sketchdailyschedule.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:/Python27/python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -436,11 +487,13 @@
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -474,18 +527,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1678" height="1048" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.251497" sideWeight="0.6673913" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26093918" sideWeight="0.65401787" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3326087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34598213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,25 +613,48 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schedule/admin.py">
+    <entry file="file://$PROJECT_DIR$/templates/forms/form_create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="14" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/forms/form_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1385" selection-end="1385" vertical-scroll-proportion="-7.8461537">
+        <state line="9" column="14" selection-start="262" selection-end="262" vertical-scroll-proportion="0.27567568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedule/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedule/management/commands/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="9" selection-start="557" selection-end="557" vertical-scroll-proportion="1.2289157" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schedule/management/commands/posttheme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ARTOMIZERREADTHIS.txt">
+    <entry file="file://$PROJECT_DIR$/schedule/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="180" selection-start="362" selection-end="362" vertical-scroll-proportion="0.094444446">
+        <state line="5" column="36" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -585,9 +662,14 @@
     <entry file="file://$PROJECT_DIR$/schedule/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sketchdailyschedule/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,86 +680,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedule/htmlcalendar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="48" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/form_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/form_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="262" selection-end="262" vertical-scroll-proportion="0.27567568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sketchdailyschedule/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schedule/management/__init__.py">
+    <entry file="file://$PROJECT_DIR$/templates/forms/form_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sketchdailyschedule/secret.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schedule/management/commands/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="39" column="33" selection-start="1179" selection-end="1179" vertical-scroll-proportion="6.1153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="9" selection-start="557" selection-end="557" vertical-scroll-proportion="1.2289157">
+        <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sketchdailyschedule/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="27" selection-start="4574" selection-end="4574" vertical-scroll-proportion="0.0">
+        <state line="18" column="17" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedule/management/commands/posttheme.py">
+    <entry file="file://$PROJECT_DIR$/schedule/htmlcalendar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="332" selection-end="332" vertical-scroll-proportion="0.32185885">
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
+        <state line="30" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.33457944">
+          <folding />
         </state>
       </provider>
     </entry>
