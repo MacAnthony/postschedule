@@ -9,9 +9,7 @@ from django.utils.dateformat import DateFormat
 
 from django.shortcuts import render_to_response
 from django.utils.safestring import mark_safe
-import praw
-
-
+from django.template import RequestContext
 import logging
 
 # Create your views here.
@@ -55,13 +53,4 @@ def calendar_view(request, year=date.today().strftime("%Y"), month=date.today().
 
     cal = PostCalendar(post_schedule).formatmonth(int(year), int(month))
 
-
-    #reddit auth stuff
-    if request.GET.get('code', ''):
-        r = praw.Reddit('OAuth Sketchdaily Scheduler u/davidwinters ver 0.1.')
-        info = r.get_access_information(request.GET.get('code', ''))
-        reddit_user = r.get_me()
-    else:
-        reddit_user = "lol fail"
-
-    return render_to_response('calendar/calendar.html', {'calendar': mark_safe(cal),'prev': prev, 'next': next, 'user': reddit_user})
+    return render_to_response('calendar/calendar.html', {'calendar': mark_safe(cal),'prev': prev, 'next': next}, context_instance=RequestContext(request))

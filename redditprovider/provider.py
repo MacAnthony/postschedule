@@ -23,7 +23,8 @@ class RedditProvider(OAuth2Provider):
 
     def get_default_scope(self):
         scope = []
-        scope.append('identity')
+        #scope.append('identity')
+        scope.append('identity,mysubreddits')
         return scope
 
     def get_auth_params(self):

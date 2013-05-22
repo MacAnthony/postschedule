@@ -7,6 +7,7 @@ from schedule.views import CreatePost, EditPost, calendar_view
 
 urlpatterns = patterns('',
     (r'^accounts/', include('allauth.urls')),
+    url(r'^$', calendar_view, name="home_calendar_index"),
     # Examples:
     # url(r'^$', 'sketchdailyschedule.views.home', name='home'),
     # url(r'^sketchdailyschedule/', include('sketchdailyschedule.foo.urls')),
