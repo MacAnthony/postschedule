@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from allauth.account.views import LoginView
 
 from django.views.generic import TemplateView
 
@@ -8,6 +9,7 @@ admin.autodiscover()
 from schedule.views import CreatePost, EditPost, calendar_view
 
 urlpatterns = patterns('',
+    url(r'^accounts/login/', LoginView.as_view(template_name='registration/login.html'), name="custom_login"),
     (r'^accounts/', include('allauth.urls')),
     url(r'^$', calendar_view, name="home_calendar_index"),
     # Examples:
