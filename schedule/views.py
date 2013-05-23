@@ -10,7 +10,9 @@ from django.utils.dateformat import DateFormat
 from django.shortcuts import render_to_response
 from django.utils.safestring import mark_safe
 from django.template import RequestContext
-import logging
+from redditprovider.decorators import mod_required
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 
@@ -33,6 +35,11 @@ class CreatePost(CreateView):
         context['date_for_link'] = date(self.year,self.month,self.day)
         return context
 
+    @method_decorator(login_required)
+    @method_decorator(mod_required)
+    def dispatch(self, *args, **kwargs):
+        return super(CreatePost, self).dispatch(*args, **kwargs)
+
 class EditPost(UpdateView):
     template_name = "forms/form_edit.html"
     context_object_name = "post"
@@ -42,7 +49,14 @@ class EditPost(UpdateView):
         obj = Post.objects.get(id=self.kwargs['id'])
         return obj
 
+    @method_decorator(login_required)
+    @method_decorator(mod_required)
+    def dispatch(self, *args, **kwargs):
+        return super(EditPost, self).dispatch(*args, **kwargs)
+
 # Calendar View
+
+@mod_required
 def calendar_view(request, year=date.today().strftime("%Y"), month=date.today().strftime("%m")):
     post_schedule = Post.objects.order_by('date').filter(
     date__year=int(year), date__month=int(month)
