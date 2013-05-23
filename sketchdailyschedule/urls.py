@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
 
+from django.views.generic import TemplateView
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -21,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^update/(?P<id>\d+)/$', EditPost.as_view(), name='edit_post'),
     url(r'^cal/$', calendar_view, name='post_calendar_index'),
     url(r'^cal/(?P<year>\d{4})/(?P<month>\d{2})/$', calendar_view, name='post_calendar'),
+    url(r'^suggestion/', TemplateView.as_view(template_name="forms/suggestion.html"), name="suggestion"),
 
 
 )

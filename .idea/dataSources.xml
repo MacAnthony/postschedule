@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1764958323">
+  <component name="DataSourceManagerImpl" format="xml" hash="1628713455">
     <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="63e07fbe-b118-4ebf-a2dc-880a76b52271">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\src\github\postschedule\data.sql</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Git Repos\postschedule\data.sql</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.PyCharm20/config/jdbc-drivers/xerial-sqlite-license.txt</url>

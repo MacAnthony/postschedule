@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'data.sql',                      # Or path to database file if using sqlite3.
+        'NAME': 'C:\Git Repos\postschedule\data.sql',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -26,7 +26,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -89,13 +89,27 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '89d4*iefy8ukan%dd%+r*ov38e4)lh(-5^9@%#b47dcpt(lh2a'
 
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+
+
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.contrib.messages.context_processors.messages",
+
+    "allauth.account.context_processors.account",
+    "allauth.socialaccount.context_processors.socialaccount",
+     "django.core.context_processors.request",
+)
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
-
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -104,6 +118,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'sketchdailyschedule.urls'
@@ -115,6 +130,16 @@ import os
 TEMPLATE_DIRS = (
 os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),
 abspath(PROJECT_ROOT, 'templates'),
+
+)
+AUTHENTICATION_BACKENDS = (
+
+    # Needed to login by username in Django admin, regardless of `allauth`
+    "django.contrib.auth.backends.ModelBackend",
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    "allauth.account.auth_backends.AuthenticationBackend",
+
 
 )
 
@@ -131,41 +156,27 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'schedule',
     'south',
-    'social_auth',
     'praw',
-)
 
-AUTHENTICATION_BACKENDS = (
-    # 'social_auth.backends.twitter.TwitterBackend',
-    # 'social_auth.backends.facebook.FacebookBackend',
-    # 'social_auth.backends.google.GoogleOAuthBackend',
-    # 'social_auth.backends.google.GoogleOAuth2Backend',
-    # 'social_auth.backends.google.GoogleBackend',
-    # 'social_auth.backends.yahoo.YahooBackend',
-    # 'social_auth.backends.browserid.BrowserIDBackend',
-    # 'social_auth.backends.contrib.linkedin.LinkedinBackend',
-    # 'social_auth.backends.contrib.disqus.DisqusBackend',
-    # 'social_auth.backends.contrib.livejournal.LiveJournalBackend',
-    # 'social_auth.backends.contrib.orkut.OrkutBackend',
-    # 'social_auth.backends.contrib.foursquare.FoursquareBackend',
-    # 'social_auth.backends.contrib.github.GithubBackend',
-    # 'social_auth.backends.contrib.vk.VKOAuth2Backend',
-    # 'social_auth.backends.contrib.live.LiveBackend',
-    # 'social_auth.backends.contrib.skyrock.SkyrockBackend',
-    # 'social_auth.backends.contrib.yahoo.YahooOAuthBackend',
-    # 'social_auth.backends.contrib.readability.ReadabilityBackend',
-    # 'social_auth.backends.contrib.fedora.FedoraBackend',
-    # 'social_auth.backends.OpenIDBackend',
-    'social_auth.backends.reddit.RedditAuth',
-    'django.contrib.auth.backends.ModelBackend',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.twitter',
+    'redditprovider',
+    'debug_toolbar',
 )
+INTERNAL_IPS = ('127.0.0.1')
 REDDIT_APP_ID = 'VcLJVSHxSP91dQ'
 REDDIT_API_SECRET = 'UwLglu9GRDW8dR9kuu7uBmRbkQo'
 REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
-
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/cal'
 #passwords
 from secret import *
-
+try:
+    from local_settings import *
+except ImportError:
+    pass
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.

@@ -1,5 +1,5 @@
 import requests
-import praw, json
+import praw, json, inspect
 
 from allauth.socialaccount.providers.oauth2.views import (OAuth2Adapter, OAuth2LoginView, OAuth2CallbackView, OAuth2View)
 from allauth.socialaccount.providers.oauth2.client import (OAuth2Client,
@@ -25,7 +25,9 @@ class RedditOAuth2Adapter(OAuth2Adapter):
         extra = kwargs["extra"]
         extra_info = []
         for item in extra:
-            extra_info.append(item)
+
+            item_serial = item.__dict__['display_name']
+            extra_info.append(item_serial)
         #extra = serializers.serialize("json", extra)
         logging.debug(extra_info)
         #extra = json.dumps(extra)
@@ -40,7 +42,7 @@ class RedditOAuth2Adapter(OAuth2Adapter):
                                email=userob.name)
         account = SocialAccount(user=user,
                                 uid=userob.id,
-                                #extra_data=extra,
+                                extra_data=extra_info,
                                 provider=self.provider_id)
         return SocialLogin(account)
 
