@@ -24,6 +24,4 @@ urlpatterns = patterns('',
     url(r'^cal/$', calendar_view, name='post_calendar_index'),
     url(r'^cal/(?P<year>\d{4})/(?P<month>\d{2})/$', calendar_view, name='post_calendar'),
     url(r'^suggestion/', TemplateView.as_view(template_name="forms/suggestion.html"), name="suggestion"),
-
-
 )
