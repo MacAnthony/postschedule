@@ -5,7 +5,7 @@ from datetime import datetime
 
 class Post(models.Model):
     user = models.CharField(max_length=30)
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=300)
     text = models.TextField()
     date = models.DateField(default=datetime.now, blank=True, unique=True)
 
