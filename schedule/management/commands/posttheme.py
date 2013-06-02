@@ -13,6 +13,6 @@ class Command(BaseCommand):
 
         r = praw.Reddit(user_agent='Sketchdaily Schedule Bot 1.0 by /u/davidwinters github.com/davidwinters/postschedule')
         r.login(REDDIT_USER, REDDIT_PASSWD)
-        r.submit('sketchdailyCANADA', p.title, text=p.text)
+        r.submit('sketchdaily', p.title, text=p.text)
 
         self.stdout.write('Theme Posted by %s \n' % REDDIT_USER)

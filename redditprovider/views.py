@@ -65,7 +65,7 @@ class RedditOAuth2CallbackView(OAuth2CallbackView):
         client = self.get_client(request, app)
         try:
             r = praw.Reddit('OAuth Sketchdaily Schedule  by u/davidwinters ver 0.1.')
-            r.set_oauth_app_info(client.consumer_key, client.consumer_secret, 'http://127.0.0.1:8000/accounts/redditprovider/login/callback/')
+            r.set_oauth_app_info(client.consumer_key, client.consumer_secret, 'http://themes.sketchdaily.net/accounts/redditprovider/login/callback/')
             access_token = r.get_access_information(request.GET['code'])
             user = r.get_me()
             extra = r.get_my_moderation()
