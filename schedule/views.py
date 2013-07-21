@@ -28,7 +28,8 @@ class CreatePost(CreateView):
         self.day = int(self.kwargs["day"])
         dt = date(self.year, self.month, self.day)
         df = DateFormat(dt)
-        return {'date': date(self.year, self.month, self.day), 'title': ("%s -" % df.format('F jS')) }
+        
+	return {'date': date(self.year, self.month, self.day), 'title': ("%s -" % df.format('F jS')), 'user':self.request.user.username}
 
     def get_context_data(self, **kwargs):
         context = super(CreatePost, self).get_context_data(**kwargs)
@@ -57,7 +58,9 @@ class EditPost(UpdateView):
 # Calendar View
 
 @mod_required
-def calendar_view(request, year=date.today().strftime("%Y"), month=date.today().strftime("%m")):
+def calendar_view(request, year=date.today().strftime("%Y"), month=None):
+    if month is None:
+	month = date.today().strftime("%m")
     post_schedule = Post.objects.order_by('date').filter(
     date__year=int(year), date__month=int(month)
     )
