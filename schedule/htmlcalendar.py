@@ -17,7 +17,7 @@ class PostCalendar(HTMLCalendar):
             display_year = date(self.year, self.month, day).strftime("%Y")
             display_month = date(self.year, self.month, day).strftime("%m")
             display_day = date(self.year, self.month, day).strftime("%d")
-	    displaydate = display_year + "/" + display_month + "/" + display_day
+	    displaydate = display_year + "-" + display_month + "-" + display_day
             cssclass = self.cssclasses[weekday]
 
             if date.today() == date(self.year, self.month, day):

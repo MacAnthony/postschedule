@@ -14,6 +14,11 @@ from redditprovider.decorators import mod_required
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
+#rest stuff
+from rest_framework import viewsets
+from schedule.serializers import PostSerializer
+from django.views.decorators.csrf import ensure_csrf_cookie
+
 # Create your views here.
 
 class CreatePost(CreateView):
@@ -58,6 +63,7 @@ class EditPost(UpdateView):
 # Calendar View
 
 @mod_required
+@ensure_csrf_cookie
 def calendar_view(request, year=date.today().strftime("%Y"), month=None):
     if month is None:
 	month = date.today().strftime("%m")
@@ -71,3 +77,11 @@ def calendar_view(request, year=date.today().strftime("%Y"), month=None):
     cal = PostCalendar(post_schedule).formatmonth(int(year), int(month))
 
     return render_to_response('calendar/calendar.html', {'calendar': mark_safe(cal),'prev': prev, 'next': next}, context_instance=RequestContext(request))
+
+@mod_required
+class PostViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows posts to be viewed or edited.
+    """
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
